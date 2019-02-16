@@ -7,8 +7,17 @@ p{
   position: absolute;
   left: 250px;
   font-family: "Gill Sans Book", "Gill Sans", sans-serif;
-  white-space: pre-line;
   font-size: 1em;
+  white-space: pre-line;
+}
+/*Defines the most common style for images*/
+img{
+  position: absolute;
+  padding: 0px;
+}
+/*Defines the most common properties of any container (mostly divs and boxes)*/
+.container{
+  position: absolute;
 }
 
 
@@ -19,16 +28,15 @@ p{
 
 /*Style of the header tab and its elements*/
 #header{
-  background-color: #252525;
+  position: fixed;
   width: 100%;
   height: 88px;
-  position: fixed;
-  left: 0px;
   top: 0px;
+  left: 0px;
+  background-color: #252525;
   z-index: 10;
 }
 #logo{
-  position: absolute;
   top: 16px;
   left: 250px;
 }
@@ -47,23 +55,21 @@ p{
 
 /*Style for first section and its components*/
 #part1{
-  position: absolute;
-  top: 88px;
-  left: 0px;
   width: 100%;
   height: 535px;
+  top: 88px;
+  left: 0px;
   background-image: url(../img/Compu.png);
   background-repeat: no-repeat;
 }
 #free1{
-  position: absolute;
   top: 320px;
   left: 250px;
 }
 #hd1{
   top: 70px;
-  font-weight: bold;
   font-size: 2em;
+  font-weight: bold;
   color: #ffffff;
 }
 #p1{
@@ -73,41 +79,35 @@ p{
 
 /*Style for second section and its components*/
 #part2{
-  position: absolute;
-  top: 623px;
-  left: 0px;
   width: 100%;
   height: 465px;
+  top: 623px;
+  left: 0px;
 }
 #hex1{
-  position: absolute;
   top: 75px;
   right: 570px;
 }
 #hex12{
-  position: absolute;
   top: 75px;
   right: 410px;
 }
 #hex13{
-  position: absolute;
   top: 75px;
   right: 250px;
 }
 #hex2{
-  position: absolute;
   top: 215px;
   right: 490px;
 }
 #hex22{
-  position: absolute;
   top: 215px;
   right: 330px;
 }
 #hd2{
   top: 70px;
-  font-weight: bold;
   font-size: 2em;
+  font-weight: bold;
   color: #ff6319;
 }
 #p2{
@@ -117,117 +117,103 @@ p{
 
 /*Style for third section and its components*/
 #part3{
-  position: absolute;
-  top: 1090px;
-  left: 0px;
   width: 100%;
   height: 405px;
+  top: 1090px;
+  left: 0px;
   background-image: url(../img/Foto.png);
   background-repeat: no-repeat;
 }
 #list{
-  position: absolute;
+  padding-left: 0px;
   top: 100px;
   left: 250px;
   font-family: "Gill Sans Book", "Gill Sans", sans-serif;
   font-size: 1.2em;
   color: #ffffff;
-  padding-left: 0px;
   list-style-image: url(../img/check.png);
   list-style-position: inside;
 }
 
 /*Style for fourth section and its components*/
 #part4{
-  position: absolute;
-  top: 1495px;
-  left: 0px;
   width: 100%;
   height: 534px;
+  top: 1495px;
+  left: 0px;
 }
 #box{
-  position: absolute;
-  top: 178px;
   width: 100%;
   height: 178px;
+  top: 178px;
   background-color: #252525;
 }
 #sum{
-  position: absolute;
   top: 64px;
   left: 35%;
 }
 #eq{
-  position: absolute;
   top: 64px;
   right: 35%;
 }
-#free2{
-  position: absolute;
-  top: 140px;
-  width: 20%;
-  left: 40%;
-  right: 40%;
-}
 #inLay{
-  position: absolute;
-  top: 60px;
   width: 20%;
-  left: 40%;
+  top: 60px;
   right: 40%;
+  left: 40%;
+
+}
+#free2{
+  top: 140px;
+  right: 40%;
+  left: 40%;
+  width: 20%;
 }
 #hd3{
   width: 100%;
   top: 40px;
   left: 0px;
   text-align: center;
-  font-weight: bold;
   font-size: 2em;
+  font-weight: bold;
   color: #ff6319;
 }
 
 /*Style for fifht section and its components*/
 #part5{
-  position: absolute;
-  top: 2029px;
-  left: 0px;
   width: 100%;
   height: 790px;
+  top: 2029px;
+  left: 0px;
 }
 #box2{
-  position: absolute;
-  top: 0px;
   width: 1191px;
   height: 243px;
+  top: 0px;
   background-image: url("../img/Page1.png");
   background-repeat: no-repeat;
 }
-#acs{
-  position: absolute;
-  top: 64px;
-  left: 675px;
-}
 #box3{
-  position: absolute;
-  top: 380px;
-  right: 0px;
   width: 1191px;
   height: 243px;
+  top: 380px;
+  right: 0px;
   background-image: url("../img/plecanegra.png");
   background-repeat: no-repeat;
 }
+#acs{
+  top: 64px;
+  left: 675px;
+}
 #ic1{
-  position: absolute;
   bottom: 90px;
   left: 478px;
 }
 #ic2{
-  position: absolute;
   bottom: 90px;
   left: 629px;
 }
 #ic3{
-  position: absolute;
   bottom: 90px;
   left: 766px;
 }
@@ -237,22 +223,20 @@ p.mini{
   font-size: .8em;
   font-weight: bold;
   color: #ffffff;
-  white-space: pre-line;
   text-align: center;
+  white-space: pre-line;
 }
 #hd4{
-  position: absolute;
+  margin: 0px;/*?*/
   bottom: 105.5px;
   left: 200px;
-  margin: 0px;
   font-size: 2em;
   color: #ffffff;
 }
 #hd5{
-  position: absolute;
+  margin: 0px;/*?*/
   bottom: 105.5px;
   left: 50px;
-  margin: 0px;
   font-size: 2em;
   color: #ffffff;
 }
@@ -268,11 +252,10 @@ p.mini{
 
 /*Style for sixht section and its components*/
 #part6{
-  position: absolute;
-  top: 2820px;
-  left: 0px;
   width: 100%;
   height: 300px;
+  top: 2820px;
+  left: 0px;
   background-color: #ff6319;
 }
 form{
@@ -282,74 +265,70 @@ form{
   top: 90px;
 }
 .cold{
-  position absolute;
+  padding: 0px;
+  border: hidden;
   width: 100%;
   height: 25px;
   top: 20px;
-  padding: 0px;
-  color: #ffffff;
   font-family: "Gill Sans Book", "Gill Sans", sans-serif;
-  border: hidden;
+  color: #ffffff;
   background-color: #252525;
 }
 #sbm{
   position: absolute;
-  bottom: 10px;
-  width: 100%;
   padding:5px 15px;
-  background: #f1f5f7;
   border: hidden;
-  cursor:pointer;
-  -webkit-border-radius: 5px;
+  width: 100%;
+  bottom: 10px;
   font-family: "Gill Sans Book", "Gill Sans", sans-serif;
-  color: #252525;
   font-size: 1em;
   font-weight: bold;
+  color: #252525;
+  background: #f1f5f7;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
 }
 #in3{
   height: 40px;
 }
 #hd6{
-  position: absolute;
-  left: 0px;
   right: 0px;
   bottom: 198px;
+  left: 0px;
   font-size: 2em;
   font-weight: bold;
-  text-align: center;
   color: #ffffff;
+  text-align: center;
 }
 label{
   position: absolute;
-  font-family: "Gill Sans Book", "Gill Sans", sans-serif;
-  color: #f1f5f7;
-  font-size: 1em;
-  text-align: center;
-  font-weight: bold;
   left: 25%;
   right: 25%;
+  font-family: "Gill Sans Book", "Gill Sans", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #f1f5f7;
+  text-align: center;
 }
 
 /*Style for sevenht section and its components*/
 #part7{
-  position: absolute;
-  top: 3270px;
-  left: 0px;
   width: 100%;
   height: 395px;
+  top: 3270px;
+  left: 0px;
   background-color: #252525;
 }
 #trans{
-  position: absolute;
   top: 100px;
   left: 250px;
 }
-#line{
-  position: absolute;/*!*/
+hr{
+  position: absolute;/*Necessary in these elements!*/
   width: 70%;
+  right: 15%;
   bottom: 168px;
   left: 15%;
-  right: 15%;
   color: #C8C8C8;
 }
 .ftpg {
@@ -373,7 +352,7 @@ a.ftpg:hover {
   left: 485px;
 }
 #social{
-  position: absolute;/*!*/
+  position: absolute;/*Necessary in this ID!*/
   width: 150px;
   height: 150px;
   top: 108px;
